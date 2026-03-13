@@ -1,6 +1,14 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+
+@theme {
+  /* This defines the 'border' color so 'border-border' works */
+  --color-border: hsl(var(--border));
+
+  /* You likely also need these for Shadcn/UI if that's what you're using */
+  --color-background: hsl(var(--background));
+  --color-foreground: hsl(var(--foreground));
+  --font-sans: var(--font-sans);
+}
 
 @layer base {
   * {
